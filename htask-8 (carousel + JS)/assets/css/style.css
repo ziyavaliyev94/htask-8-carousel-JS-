@@ -1,0 +1,63 @@
+.container {
+    margin: 0 auto;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+}
+
+.btns button {
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    transition: 0.5s;
+    border: 1px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+        color: red;
+    }
+
+}
+
+.btns {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 17rem;
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+
+    img {
+        width: 700px;
+        height: 600px;
+    }
+}
+
+.Opel {
+    margin: 12px;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Rubik Mono One", serif;
+    position: relative;
+  }
+
+  .Opel::before,
+  .Opel::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(255,69,0,0.8), transparent 70%);
+    z-index: -1;
+  }
+  
